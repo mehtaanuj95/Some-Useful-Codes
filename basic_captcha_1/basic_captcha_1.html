@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+
+        function DrawCaptcha()
+        {
+            
+            var arr = [];
+            for( var i = 0; i < 8; i++)
+            {
+                arr[i] = Math.random().toString(36).substr(2,1);
+            }
+            var code = arr[0] + ' ' + arr[1] + ' ' + ' ' + arr[2] + ' ' + arr[3] + ' ' + arr[4] + ' '+ arr[5] + ' ' + arr[6];
+            document.getElementById("txtCaptcha").value = code
+        }
+        function ValidCaptcha()
+        {
+            var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
+            var str2 = removeSpaces(document.getElementById('txtInput').value);
+            if (str1 == str2) return true;        
+            return false;
+            
+        }
+        function removeSpaces(string)
+        {
+            return string.split(' ').join('');
+        }
+    </script>
+</head>
+<body onload="DrawCaptcha();">
+    <table>
+        <tr>
+            <td>
+                Enter the text shown on image <br/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="txtCaptcha" 
+                    style="background-image:url(2.jpg); text-align:center; border:none;
+                    font-weight:bold; height:40px; width:175px; font-size:30px; font-family:verdana" />
+                <input type="button" id="btnrefresh" value="Refresh" onclick="DrawCaptcha();" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="txtInput"/>    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="captcha_check_button" type="button" value="Check" onclick="alert(ValidCaptcha());"/>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

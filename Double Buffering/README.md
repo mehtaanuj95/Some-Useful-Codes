@@ -1,4 +1,4 @@
-# Double buffering for of data
+# Double buffering of data in graphic applications
 
 Initially define thee two inside your class.
 

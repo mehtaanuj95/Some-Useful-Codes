@@ -1,7 +1,7 @@
 MNIST is the dataset of handwritten images.
 This dataset can be downloaded from following URL - http://yann.lecun.com/exdb/mnist/
 
-Four files are available on this link. You can download any one of the above.
+Four files are available on this link. You can download any one of them.
 (I downloaded this one - t10k-images-idx3-ubyte.gz ).
 
 Step 1 : 

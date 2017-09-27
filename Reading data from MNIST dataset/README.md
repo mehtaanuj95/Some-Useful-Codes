@@ -21,4 +21,4 @@ displayData(i(1:10,:));
 
 
 The result will be something like this. 
-
+![alt text](https://github.com/mehtaanuj95/Some-Useful-Codes/blob/master/Reading%20data%20from%20MNIST%20dataset/result.jpg)

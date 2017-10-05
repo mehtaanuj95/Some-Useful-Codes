@@ -14,11 +14,13 @@ Copy displayData.m to the same directory.
 Step 3 :
 Open Octave and write the following codes.
 
-
+```
 i = loadMNISTImages('t10k-images.idx3-ubyte' );
 i = i';
 displayData(i(1:10,:));
+```
 
 
 The result will be something like this. 
 
+![alt text](https://github.com/mehtaanuj95/Some-Useful-Codes/blob/master/Reading%20data%20from%20MNIST%20dataset/result.jpg)

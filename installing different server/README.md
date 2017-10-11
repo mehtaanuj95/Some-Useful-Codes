@@ -1,4 +1,4 @@
-**Apache Server**
+## Apache Server
 
 Apache is a free and open source server software.
 To install it 
@@ -22,3 +22,16 @@ The output of this should be -
 
 
 Note: the 'service' after sudo in step 3 will work only in Ubuntu 14.04 or lower. For higher versions, use 'systemctl'.
+
+**Public FOlder :**
+```
+/var/www/html/
+```
+**Configuration File**
+```
+/etc/apache2/apache2.conf
+```
+**Restart**
+```
+sudo service apache2 restart
+```

@@ -66,7 +66,7 @@ The output should be something like this
 ```
 Connected to localhost.
 220 (vsFTPd 3.0.2)
-Name (localhost:anuj): *anuj*
+Name (localhost:anuj): anuj
 331 Please specify the password.
 Password:
 230 Login successful.
@@ -90,3 +90,11 @@ Then to solve this issue, open  /etc/vsftpd.conf  and add the following line to 
 allow_writeable_chroot=YES
 ```
 This should sole this issue.
+
+**To host an already existing directory on ftp**
+
+Step1 : go to the directory that you want to host in ftp. Then type in the following command.
+```
+sudo mount --bind . /srv/ftp/
+```
+Then to check whether the files have been hosten on ftp or not, open ftp://localhost.

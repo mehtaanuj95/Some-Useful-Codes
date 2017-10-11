@@ -98,3 +98,19 @@ Step1 : go to the directory that you want to host in ftp. Then type in the follo
 sudo mount --bind . /srv/ftp/
 ```
 Then to check whether the files have been hosten on ftp or not, open ftp://localhost.
+
+
+**Public Folder:**
+```
+/srv/ftp
+```
+**Configuration File**
+```
+/etc/vsftpd.conf
+```
+**Restart ftp:**
+```
+sudo service vsftpd restart
+```
+
+## SSH

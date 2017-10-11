@@ -114,3 +114,21 @@ sudo service vsftpd restart
 ```
 
 ## SSH
+
+**Installation:**
+```
+sudo apt-get install openssh-server
+```
+**Checking Status:**
+```
+sudo service ssh status
+```
+**Configuration File:**
+```
+/etc/ssh/sshd_config
+```			
+**Restart SSH:**
+```
+sudo service ssh restart
+```			
+

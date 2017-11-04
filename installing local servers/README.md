@@ -39,5 +39,16 @@ Then visit ```http://localhost:8080/``` on your browser.
 http-server -c-1
 ```
 
+# Using PHP built-in web server (5th option)
 
+PHP has (since version 5.4.0) a built-in web server for testing purposes that can be used.
+
+Go to the directory from where you want to start your server and then type in the terminal:
+```
+php -S localhost:8000
+```
+Then visit ```http://localhost:8000/``` on your browser.
+
+
+**note** This tutorial was made by taking reference from this [GitHub Page](https://github.com/processing/p5.js/wiki/Local-server).
 

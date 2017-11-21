@@ -52,3 +52,5 @@ Then create a file named index2.html and write the following contents in it.
 ```
 The output would be same as in previous cases.
 This method is much easy in comparison to previous methods.
+
+**note:** This artilce was made with reference to the video by [Danial Shiffman](https://www.youtube.com/watch?v=DloHqUfPbJc)

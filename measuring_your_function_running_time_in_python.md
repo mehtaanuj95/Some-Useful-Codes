@@ -1,4 +1,4 @@
-##Below code demonstrates how to compares two function's running time in python.
+## Below code demonstrates how to compares two function's running time in python.
 
 All the statements written in ```if __name__ == '__main__':``` gets executed only when we are running our code.
 
